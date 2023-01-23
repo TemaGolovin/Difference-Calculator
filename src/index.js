@@ -5,11 +5,11 @@ import path from "path";
 
 const getfilePath = (filePath) => path.resolve(process.cwd(), filePath);
 
-const readFile = (path) => fs.readFileSync(path);
+const readFile = (pathToFile) => fs.readFileSync(pathToFile, "utf-8");
 
 const parsesFile = (file) => JSON.parse(file);
 
-const gendiff = (filePath1, filePath2) => {
+const genDiff = (filePath1, filePath2) => {
   const file1 = getfilePath(filePath1);
   const file2 = getfilePath(filePath2);
 
@@ -25,6 +25,7 @@ const gendiff = (filePath1, filePath2) => {
   const uniqKeys = [...new Set(keys1.concat(keys2))];
   const sortUniqKeys = uniqKeys.slice().sort();
   let result = "";
+  /* eslint-disable-next-line */
   for (const key of sortUniqKeys) {
     if (obj1[key] === obj2[key]) {
       result = `${result}   ${key}: ${obj1[key]}\n`;
@@ -44,4 +45,4 @@ const gendiff = (filePath1, filePath2) => {
   return `{\n${result}}`;
 };
 
-export default gendiff;
+export default genDiff;
