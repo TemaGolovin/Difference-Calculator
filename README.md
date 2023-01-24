@@ -9,4 +9,7 @@
 ![Node CI](https://github.com/TemaGolovin/frontend-project-46/actions/workflows/nodejs.yml/badge.svg)
 
 1. Flat File Comparison (JSON).
-   https://asciinema.org/a/XvzjgZvesNKQxpmB1qgBe3Uhx
+   [![asciinema](https://asciinema.org/a/XvzjgZvesNKQxpmB1qgBe3Uhx.svg)](https://asciinema.org/a/XvzjgZvesNKQxpmB1qgBe3Uhx)
+
+2. Flat File Comparison (YAML).
+   [![asciinema](https://asciinema.org/a/L7BTceFjIzOoJ85iJcgThcYe5.svg)](https://asciinema.org/a/L7BTceFjIzOoJ85iJcgThcYe5)
