@@ -1,12 +1,12 @@
-import _ from "lodash";
-import fs from "fs";
-import process from "process";
-import path from "path";
-import parses from "./parses.js";
+import _ from 'lodash';
+import fs from 'fs';
+import process from 'process';
+import path from 'path';
+import parses from './parses.js';
 
 const getfilePath = (filePath) => path.resolve(process.cwd(), filePath);
 
-const readFile = (pathToFile) => fs.readFileSync(pathToFile, "utf-8");
+const readFile = (pathToFile) => fs.readFileSync(pathToFile, 'utf-8');
 
 const genDiff = (filePath1, filePath2) => {
   const file1 = getfilePath(filePath1);
@@ -26,7 +26,7 @@ const genDiff = (filePath1, filePath2) => {
 
   const uniqKeys = [...new Set(keys1.concat(keys2))];
   const sortUniqKeys = uniqKeys.slice().sort();
-  let result = "";
+  let result = '';
   /* eslint-disable-next-line */
   for (const key of sortUniqKeys) {
     if (_.has(obj1, key) && _.has(obj2, key) && obj1[key] !== obj2[key]) {
