@@ -1,11 +1,11 @@
-import stylish from "./stylish.js";
-import plain from "./plain.js";
+import stylish from './stylish.js';
+import plain from './plain.js';
 
 const getFormat = (data, format) => {
   switch (format) {
-    case "stylish":
+    case 'stylish':
       return stylish(data);
-    case "plain":
+    case 'plain':
       return plain(data);
     default:
       throw new Error(`Unknown format: ${format}`);
