@@ -16,3 +16,6 @@
 
 3. Recursive comparison.
    [![asciinema](https://asciinema.org/a/80ctbnVJ7RvpOpEWGejg2hjeD.svg)](https://asciinema.org/a/80ctbnVJ7RvpOpEWGejg2hjeD)
+
+4. Plain format.
+   [![asciinema](https://asciinema.org/a/6aDunWEiecPkOkV96xxyKWL4W.svg)](https://asciinema.org/a/6aDunWEiecPkOkV96xxyKWL4W)
