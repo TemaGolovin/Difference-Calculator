@@ -13,3 +13,6 @@
 
 2. Flat File Comparison (YAML).
    [![asciinema](https://asciinema.org/a/L7BTceFjIzOoJ85iJcgThcYe5.svg)](https://asciinema.org/a/L7BTceFjIzOoJ85iJcgThcYe5)
+
+3. Recursive comparison.
+   [![asciinema](https://asciinema.org/a/80ctbnVJ7RvpOpEWGejg2hjeD.svg)](https://asciinema.org/a/80ctbnVJ7RvpOpEWGejg2hjeD)
