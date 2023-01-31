@@ -1,8 +1,8 @@
-import _ from "lodash";
+import _ from 'lodash';
 
 const presentValue = (val) => {
   if (_.isObject(val)) {
-    return "[complex value]";
+    return '[complex value]';
   }
   if (_.isString(val)) {
     return `'${val}'`;
@@ -16,27 +16,27 @@ const plain = (diff) => {
       const { name, value, type } = node;
       const makePath = [...complexName, name];
       switch (type) {
-        case "added":
+        case 'added':
           return `Property '${makePath.join(
-            "."
+            '.',
           )}' was added with value: ${presentValue(value)}`;
-        case "deleted":
-          return `Property '${makePath.join(".")}' was removed`;
-        case "nested":
+        case 'deleted':
+          return `Property '${makePath.join('.')}' was removed`;
+        case 'nested':
           return plainDiff(value, makePath);
-        case "changed":
+        case 'changed':
           return `Property '${makePath.join(
-            "."
+            '.',
           )}' was updated. From ${presentValue(node.value1)} to ${presentValue(
-            node.value2
+            node.value2,
           )}`;
-        case "unchanged":
+        case 'unchanged':
           return [];
         default:
           throw new Error(`Type: ${type} is undefined`);
       }
     });
-    return result.join("\n");
+    return result.join('\n');
   };
   return plainDiff(diff);
 };
