@@ -29,3 +29,9 @@ test('gendiff nested objects in plain format', () => {
     genDiff(getFixturePath('file1.json'), getFixturePath('file2.json'), 'plain'),
   ).toEqual(readFile('expectedPlainFormat.txt'));
 });
+
+test('gendiff nested objects in json format', () => {
+  expect(
+    genDiff(getFixturePath('file1.json'), getFixturePath('file2.json'), 'json'),
+  ).toEqual(readFile('expectedJsonFormat.txt'));
+});
