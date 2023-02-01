@@ -10,21 +10,15 @@
 
 ## **Description:**
 
----
-
 The Difference Calculator is a CLI program that shows the differences between two files. Supported file formats: JSON, YML, YAML.
 
 ## **Installation:**
-
----
 
 1. Make sure you have at least version 12 of Node.js installed: `node -v.`
 2. Clone this repository: `git clone https://github.com/TemaGolovin/frontend-project-46`
 3. Run the command: `make install.`
 
 ## **Running tests:**
-
----
 
 ```
 $ make test
