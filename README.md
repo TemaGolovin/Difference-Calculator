@@ -19,3 +19,6 @@
 
 4. Plain format.
    [![asciinema](https://asciinema.org/a/6aDunWEiecPkOkV96xxyKWL4W.svg)](https://asciinema.org/a/6aDunWEiecPkOkV96xxyKWL4W)
+
+5. JSON format.
+   [![asciinema](https://asciinema.org/a/Lr2B8dDtFD0k8tZWdmqyljE3c.svg)](https://asciinema.org/a/Lr2B8dDtFD0k8tZWdmqyljE3c)
