@@ -18,15 +18,17 @@ The Difference Calculator is a CLI program that shows the differences between tw
 
 ---
 
-1. Make sure you have at least version 12 of Node.js installed: ''node -v.''
-2. Clone this repository: ''git clone https://github.com/TemaGolovin/frontend-project-46''
-3. Run the command: ''make install.''
+1. Make sure you have at least version 12 of Node.js installed: `node -v.`
+2. Clone this repository: `git clone https://github.com/TemaGolovin/frontend-project-46`
+3. Run the command: `make install.`
 
 ## **Running tests:**
 
 ---
 
-'''$ make test'''
+```
+$ make test
+```
 
 ## **How to use:**
 
@@ -34,15 +36,17 @@ The Difference Calculator is a CLI program that shows the differences between tw
 
 You can use the project as a script in the terminal or as a library in your project. You can output changes in three formats: stylish (default), plain and json.
 
-<gendiff -h>
-<Usage: gendiff [options] <filepath1> <filepath2>
+```
+gendiff -h
+Usage: gendiff [options] <filepath1> <filepath2>
 
-<Compares two configuration files and shows a difference.>
+Compares two configuration files and shows a difference.
 
-<Options:
+Options:
 -V, --version output the version number
 -f, --format <type> <output format (default: "stylish")
--h, --help display help for command>
+-h, --help display help for command
+```
 
 1. Flat File Comparison (JSON).
    [![asciinema](https://asciinema.org/a/XvzjgZvesNKQxpmB1qgBe3Uhx.svg)](https://asciinema.org/a/XvzjgZvesNKQxpmB1qgBe3Uhx)
