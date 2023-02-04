@@ -1,10 +1,9 @@
-import _ from 'lodash';
 import fs from 'fs';
 import process from 'process';
 import path from 'path';
 import parser from './parser.js';
 import getFormat from './formatters/index.js';
-import findDiff from './findDiff.js'
+import findDiff from './findDiff.js';
 
 const getfilePath = (filePath) => path.resolve(process.cwd(), filePath);
 
