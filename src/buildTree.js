@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-const findDiff = (obj1, obj2) => {
+const buildTree = (obj1, obj2) => {
   const keys1 = Object.keys(obj1);
   const keys2 = Object.keys(obj2);
 
@@ -9,7 +9,7 @@ const findDiff = (obj1, obj2) => {
     if (_.isObject(obj1[key]) && _.isObject(obj2[key])) {
       return {
         name: key,
-        value: findDiff(obj1[key], obj2[key]),
+        value: buildTree(obj1[key], obj2[key]),
         type: 'nested',
       };
     }
@@ -44,4 +44,4 @@ const findDiff = (obj1, obj2) => {
   return diffStructure;
 };
 
-export default findDiff;
+export default buildTree;
