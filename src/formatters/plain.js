@@ -7,7 +7,7 @@ const presentValue = (val) => {
   if (_.isString(val)) {
     return `'${val}'`;
   }
-  return val;
+  return `${val}`;
 };
 
 const plain = (diff) => {
