@@ -3,7 +3,7 @@ import process from 'process';
 import path from 'path';
 import parser from './parser.js';
 import getFormat from './formatters/index.js';
-import findDiff from './findDiff.js';
+import buildTree from './buildTree.js';
 
 const getfilePath = (filePath) => path.resolve(process.cwd(), filePath);
 
@@ -21,7 +21,7 @@ const genDiff = (filePath1, filePath2, format = 'stylish') => {
   const obj1 = parser(readedFile1, format1);
   const obj2 = parser(readedFile2, format2);
 
-  const diff = findDiff(obj1, obj2);
+  const diff = buildTree(obj1, obj2);
 
   return getFormat(diff, format);
 };
